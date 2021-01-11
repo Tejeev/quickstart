@@ -27,7 +27,7 @@ See cloud provider quickstarts for an HA foundation according to Rancher install
 See [/vagrant](./vagrant) for details on usage and settings.
 
 
-## Cloud quickstart
+## Cloud quickstartd
 
 Quickstarts are provided for [**Amazon Web Services** (`aws`)](./aws), [**Microsoft Azure Cloud** (`azure`)](./azure), [**Microsoft Azure Cloud with Windows nodes** (`azure-windows`)](./azure-windows), [**DigitalOcean** (`do`)](./do), and [**Google Cloud Platform** (`gcp`)](./gcp).
 
