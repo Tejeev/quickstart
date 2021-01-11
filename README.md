@@ -25,7 +25,7 @@ See cloud provider quickstarts for an HA foundation according to Rancher install
 ### Using Vagrant quickstart
 
 See [/vagrant](./vagrant) for details on usage and settings.
-
+test
 
 ## Cloud quickstart
 
