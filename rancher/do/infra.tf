@@ -29,6 +29,7 @@ resource "digitalocean_droplet" "rancher_server" {
   region   = var.do_region
   size     = var.droplet_size
   ssh_keys = [digitalocean_ssh_key.quickstart_ssh_key.fingerprint]
+  tags     = var.user_tag != "" ? [var.user_tag] : []
 
   provisioner "remote-exec" {
     inline = [
@@ -74,6 +75,7 @@ resource "digitalocean_droplet" "quickstart_node" {
   region   = var.do_region
   size     = var.droplet_size
   ssh_keys = [digitalocean_ssh_key.quickstart_ssh_key.fingerprint]
+  tags     = var.user_tag != "" ? [var.user_tag] : []
 
   user_data = templatefile(
     "${path.module}/files/userdata_quickstart_node.template",
