@@ -25,7 +25,7 @@ resource "digitalocean_ssh_key" "quickstart_ssh_key" {
 # DO droplet for creating a single node RKE cluster and installing the Rancher server
 resource "digitalocean_droplet" "rancher_server" {
   name     = "${var.prefix}-rancher-server"
-  image    = "ubuntu-20-04-x64"
+  image    = "ubuntu-25-04-x64"
   region   = var.do_region
   size     = var.droplet_size
   ssh_keys = [digitalocean_ssh_key.quickstart_ssh_key.fingerprint]
@@ -70,7 +70,7 @@ module "rancher_common" {
 # DO droplet for creating a single node workload cluster
 resource "digitalocean_droplet" "quickstart_node" {
   name     = "${var.prefix}-quickstart-node"
-  image    = "ubuntu-20-04-x64"
+  image    = "ubuntu-25-04-x64"
   region   = var.do_region
   size     = var.droplet_size
   ssh_keys = [digitalocean_ssh_key.quickstart_ssh_key.fingerprint]
