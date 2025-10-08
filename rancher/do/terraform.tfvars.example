@@ -17,7 +17,7 @@ do_region = "nyc1"
 droplet_size = "s-4vcpu-8gb"
 
 # Prefix added to names of all resources
-prefix = "tj"
+prefix = "usr_quickstart"
 
 # The helm repository, where the Rancher helm chart is installed from
 rancher_helm_repository = "https://releases.rancher.com/server-charts/latest"
